@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Ismaël Lemo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #eef2f6;
+      color: #1e2a38;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      animation: fadeInDown 1s ease;
+    }
+    .contact-box a {
+    color: #1e2a38;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+    .contact-box a:hover {
+    color: #3498db; /* bleu au survol */
+  }
+
+    p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    a.email {
+      color: #1e2a38;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a.retour {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      padding: 12px 25px;
+      background-color: #1e2a38;
+      color: white;
+      border-radius: 30px;
+      font-size: 1em;
+      transition: background 0.3s, transform 0.3s;
+    }
+    a.retour:hover {
+      background-color: #34495e;
+      transform: scale(1.05);
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contactez-moi</h1>
+
+  <div class="contact-box">
+  <p><strong>LinkedIn :</strong> 
+    <a href="www.linkedin.com/in/lemo-ismael-2013a3384" target="_blank">Ismael Lemo</a>
+  </p>
+  <p><strong>Facebook :</strong> 
+    <a href="https://www.facebook.com/Ismael.Lemo" target="_blank">Ismael.Lemo</a>
+  </p>
+  <p> <strong>Téléphone :</strong> 
+    <a href="tel:+687878107">87.81.07</a>
+  </p>
+ <p><strong>Email :</strong> 
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lemo.ismaa@gmail.com" target="_blank">
+    lemo.ismaa@gmail.com
+  </a>
+</p>
+</div>
+  <a class="retour" href="index.html">← Retour à l'accueil</a>
+
+</body>
+</html>

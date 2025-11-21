@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Expériences - Ismaël Lemo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f0f3f8;
+      color: #000000;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      animation: fadeInDown 1s ease;
+    }
+    .formation {
+      background: rgb(255, 255, 255);
+      padding: 25px;
+      margin-bottom: 25px;
+      border-left: 6px solid #1e2a38;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      text-align: left;
+      animation: fadeInUp 1s ease;
+    }
+    .formation h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    a.retour {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      padding: 12px 25px;
+      background-color: #1e2a38;
+      color: rgb(255, 253, 253);
+      border-radius: 30px;
+      font-size: 1em;
+      transition: background 0.3s, transform 0.3s;
+    }
+    a.retour:hover {
+      background-color: #34495e;
+      transform: scale(1.05);
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Expériences professionnelles</h1>
+
+  <div class="formation"> <!-- au lieu de class="experience" -->
+
+    <h2>Stage 1ère année BTS SIO – Newrest IT</h2>
+    <p>Newrest PK4 – Octobre / Novembre 2025</p>
+    <p>Decouverte d'un service informatique ainsi que participation au mission de l'entreprise.</p>
+  </div>
+
+  <div class="formation"> <!-- au lieu de class="experience" -->
+
+    <h2>Hackagou – Arene du Sud</h2>
+    <p>Salle fermée - Octobre 2025</p>
+    <p>Decouverte du concours et apprentissage en cybersecurité.</p>
+  </div>
+
+  <div class="formation"> <!-- au lieu de class="experience" -->
+
+    <h2>Réserviste – Armée de l'air</h2>
+    <p>Base de Tontouta – Janvier 2025</p>
+    <p>Participation à la PMAIR & FMIR. Travail en équipe, rigueur, engagement.</p>
+  </div>
+
+  <div class="formation"> <!-- au lieu de class="experience" -->
+
+    <h2>Stage de 3ème – École Jean Ounou Cotin</h2>
+    <p>Ecole de Tamoa - 2021</p>
+    <p>Soutien aux enseignants, découverte de la gestion d’une classe.</p>
+  </div>
+
+  
+  <a class="retour" href="index.html">← Retour à l'accueil</a>
+
+</body>
+</html>

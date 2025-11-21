@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formations - Ismaël Lemo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f0f3f8;
+      color: #000000;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      animation: fadeInDown 1s ease;
+    }
+    .formation {
+      background: rgb(255, 255, 255);
+      padding: 25px;
+      margin-bottom: 25px;
+      border-left: 6px solid #1e2a38;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      text-align: left;
+      animation: fadeInUp 1s ease;
+    }
+    .formation h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    a.retour {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      padding: 12px 25px;
+      background-color: #1e2a38;
+      color: rgb(255, 253, 253);
+      border-radius: 30px;
+      font-size: 1em;
+      transition: background 0.3s, transform 0.3s;
+    }
+    a.retour:hover {
+      background-color: #34495e;
+      transform: scale(1.05);
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mes formations</h1>
+
+  <div class="formation">
+    <h2>🎓 BTS SIO – SLAM (en cours)</h2>
+    <p>Lycée Dick Ukeiwé, 2024-2025<br>
+    Développement d'applications, bases de données, sécurité informatique.</p>
+  </div>
+
+  <div class="formation">
+    <h2>🎓 Bac Général – Spécialité NSI</h2>
+    <p>Lycée Anova Païta, 2022-2024<br>
+    Apprentissage des bases de l'informatique, algorithmie, logique.</p>
+  </div>
+
+  <div class="formation">
+    <h2>📘 Brevet – Mention Bien</h2>
+    <p>Collège Gabriel Païta, 2021</p>
+  </div>
+
+  <a class="retour" href="index.html">← Retour à l'accueil</a>
+
+</body>
+</html>

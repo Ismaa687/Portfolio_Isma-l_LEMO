@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compétences - Ismaël Lemo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #ecf0f3;
+      color: #1e2a38;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #2c3e50;
+    }
+
+    .card ul {
+      text-align: left;
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+    }
+
+    .emoji {
+      font-size: 1.3em;
+      margin-right: 5px;
+    }
+
+    a.retour {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      padding: 12px 25px;
+      background-color: #1e2a38;
+      color: white;
+      border-radius: 30px;
+      font-size: 1em;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    a.retour:hover {
+      background-color: #34495e;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mes compétences techniques & personnelles</h1>
+
+  <div class="grid">
+    <div class="card">
+      <h2><span class="emoji"></span>Langages de programmation</h2>
+      <ul>
+        <li>Python – manipulation de données, logique, scripts</li>
+        <li>HTML – structuration de pages web</li>
+        <li>SQL – requêtes de bases, gestion de données</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji"></span>Outils bureautiques</h2>
+      <ul>
+        <li>Word – mise en page pro, sommaires</li>
+        <li>Excel – formules, tableaux, graphiques</li>
+        <li>PowerPoint – présentations animées</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji"></span>Systèmes d’exploitation</h2>
+      <ul>
+        <li>Windows – configuration, navigation fichiers</li>
+        <li>Linux (Ubuntu) – terminal, commandes de base</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji"></span>Qualités personnelles</h2>
+      <ul>
+        <li>Capacité d’adaptation rapide</li>
+        <li>Curiosité et autonomie</li>
+        <li>Sens des responsabilités</li>
+        <li>Bon relationnel / travail en équipe</li>
+      </ul>
+    </div>
+  </div>
+
+  <a class="retour" href="index.html">← Retour à l'accueil</a>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil - Ismaël Lemo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-light: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+      --text-light: #1f2d52;
+      --btn-grad: linear-gradient(135deg, #1f2d52, #324a84);
+      --btn-grad-hover: linear-gradient(135deg, #324a84, #1f2d52);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-light);
+      min-height: 100vh;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      width: 300%;
+      height: 300%;
+      background: radial-gradient(circle, rgba(31,45,82,0.05) 1px, transparent 1px);
+      background-size: 60px 60px;
+      animation: moveBackground 90s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes moveBackground {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-50%, -50%); }
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 40px;
+      animation: fadeInDown 1s ease;
+      z-index: 1;
+      position: relative;
+    }
+
+    .grid {
+      display: flex;
+      justify-content: center;
+      animation: fadeInUp 1.5s ease;
+      z-index: 1;
+      position: relative;
+    }
+
+    .card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      max-width: 700px;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.6em;
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      padding: 12px 30px;
+      background: var(--btn-grad);
+      color: white;
+      border-radius: 50px;
+      font-size: 1em;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--btn-grad-hover);
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    a.retour {
+      display: inline-block;
+      margin-top: 50px;
+      text-decoration: none;
+      padding: 12px 30px;
+      background: var(--btn-grad);
+      color: white;
+      border-radius: 50px;
+      font-size: 1em;
+      transition: all 0.3s ease;
+      animation: fadeInUp 2s ease;
+      z-index: 1;
+      position: relative;
+    }
+
+    a.retour:hover {
+      background: var(--btn-grad-hover);
+      transform: translateY(-5px) scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      opacity: 0.6;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      .card { padding: 25px; }
+      .btn, a.retour { padding: 10px 25px; font-size: 0.9em; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mon Profil</h1>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Présentation</h2>
+      <p>
+        Je suis Ismaël Lemo, un étudiant en BTS SIO, j'ai choisis le devellopement (SLAM) car je veux me spécialise dans l'utilisation des intelligences artificielles.
+        Mon objectif est d'aider au mieux la population à s'adapter aux nouvelles technologies.
+      </p>
+      <a class="btn" href="cv-ismael.jpg" download>Télécharger le CV</a>
+    </div>
+  </div>
+
+  <a class="retour" href="index.html">← Retour à l'accueil</a>
+
+  <footer>© 2025 Ismaël Lemo — Portfolio personnel</footer>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compétences - Ismaël Lemo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #ecf0f3;
+      color: #1e2a38;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.4em;
+      color: #2c3e50;
+    }
+
+    .emoji {
+      font-size: 1.3em;
+      margin-right: 5px;
+    }
+
+    a.retour {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      padding: 12px 25px;
+      background-color: #1e2a38;
+      color: white;
+      border-radius: 30px;
+      font-size: 1em;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    a.retour:hover {
+      background-color: #34495e;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Images côte à côte */
+    .img-row {
+      display: flex;
+      justify-content: center; /* centre horizontalement */
+      align-items: center;     /* centre verticalement */
+      gap: 20px;               /* espace entre les images */
+      margin-bottom: 15px;
+    }
+
+    .card-img {
+      width: 40%;              /* taille par défaut */
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .large-img {
+      width: 80%;              /* image ANSSI agrandie */
+    }
+
+    .card-img:hover, .large-img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mes certifications officielles</h1>
+
+  <div class="grid">
+    <div class="card">
+      <h2><span class="emoji">📑</span>Certification SecNum</h2>
+      <div class="img-row">
+        <img src="Attestation_ANSSI.png" alt="Certification ANSSI" class="card-img large-img">
+        </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji">📑</span>Certification Cursa</h2>
+      <div class="img-row">
+        <img src="Attestation_Cursa.png" alt="Certification Cursa" class="card-img">
+        </div>
+    </div>
+  </div>
+
+  <a class="retour" href="index.html">← Retour à l'accueil</a>
+
+</body>
+</html>
